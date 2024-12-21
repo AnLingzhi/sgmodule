@@ -1,0 +1,8 @@
+#!name=大麦会员
+#!desc=解锁大麦会员信息
+
+[Script]
+大麦会员 = type=http-response,pattern=^https?:\/\/mtop\.damai\.cn\/gw\/mtop\.damai\.wireless\.my\.getpersonalinfo,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/AnLingzhi/sgmodule/Script/Damai/damai.js,script-update-interval=0
+
+[MITM]
+hostname = %APPEND% mtop.damai.cn 
